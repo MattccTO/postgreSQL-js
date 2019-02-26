@@ -26,7 +26,6 @@ client.connect((err) => {
     }
     const famousList = result.rows;
     console.log('Searching...');
-    console.log(famousList);
     console.log(`Found ${famousList.length} person(s) by the name of '${famousLookup}':`);
     famousList.forEach((item, i) => {
       const date = dateFormatter(famousList[i].birthdate);
